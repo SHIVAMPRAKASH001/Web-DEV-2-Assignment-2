@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Async Weather Tracker</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+  <div class="main-wrapper">
+
+    <div class="main-container">
+      <h1>Async Weather Tracker</h1>
+
+      <!-- Search Section -->
+      <div class="search-box">
+        <div class="search-input-group">
+          <input type="text" id="cityInput" placeholder="Enter city name">
+          <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Image Spinner -->
+        <div id="loader" class="loader" style="display: none;">
+          <img src="https://cdn-icons-png.flaticon.com/512/8680/8680116.png" alt="Loading">
+        </div>
+
+        <!-- Weather Result -->
+        <div id="weatherResult"></div>
+      </div>
+
+      <!-- History Section -->
+      <div class="history-section">
+        <div class="history-header">
+          <h3>Recent Searches</h3>
+          <button id="clearHistory">Clear</button>
+        </div>
+        <ul id="historyList"></ul>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Shivam PRAKASH | prakashshivam459@gmail.com | +91 9142 xxxxxx</p>
+        <p>B. Tech CSE | 2501010199 | K.R. Mangalam University</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
