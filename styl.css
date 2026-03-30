@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #df944e, #4df80a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Wrapper */
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main Card */
+.main-container {
+  background: linear-gradient(175deg,rgba(112, 77, 12, 0.185), #5c0f0f2c);
+  width: 400px;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.18);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.main-container:hover {
+  transform: translateY(-6px);
+}
+
+h1 {
+  margin-bottom: 25px;
+  color: #b9f70e;
+  font-weight: 600;
+}
+
+/* Search Section */
+.search-input-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.search-input-group input {
+  padding: 10px;
+  width: 65%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-input-group input:focus {
+  border-color: #4e73df;
+  box-shadow: 0 0 5px rgba(78, 115, 223, 0.3);
+}
+
+.search-input-group button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e73df;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.search-input-group button:hover {
+  background-color: #2e59d9;
+  transform: scale(1.05);
+}
+
+/* 🌤 Spinner */
+.loader {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.loader img {
+  width: 55px;
+  height: 55px;
+  animation: rotateWeather 1.2s linear infinite;
+}
+
+@keyframes rotateWeather {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Weather Result */
+#weatherResult {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* History Section */
+.history-section {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.history-header h3 {
+  color: #17d3ec;
+  margin: 0;
+}
+
+/* History List */
+.history-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 130px;
+  overflow-y: auto;
+}
+
+.history-section li {
+  background-color: #f8f9fc;
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.history-section li:hover {
+  background-color: #d1e2ff;
+  transform: translateX(3px);
+}
+
+/* Clear Button */
+#clearHistory {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #600dfa;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+#clearHistory:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  padding: 10px 15px;
+  color: rgb(252, 9, 159);
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.9;
+}
